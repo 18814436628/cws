@@ -148,8 +148,34 @@
         }else{
         alert("你输了"+n2)
         }*/
-        
-
+/*        var n1=confirm("确定是否退出");
+        if(n1==true){
+            alert("你已经退出");
+        }else{
+            alert("你已经取消退出");
+        }*/
+/*        var n1=Math.floor(Math.random()*100);
+     var n2=prompt("请输入一个数字"+n1);
+     n3=(n2>n1?"你赢了":"你输了")
+     alert(n3);*/
+/*        var n1=confirm("是否退出");
+        n2=(n1==true?"您已退出":"您已取消退出");
+        alert(n2);*/
+        var n1=prompt("请输入汽油编号92号或者97号");
+        var n2=prompt("请输入多少升");
+        n2=parseInt(n2);
+        n1=parseInt(n1);
+        if (n1==92 && n2<=20){
+            alert("一共"+n2*6+"元")
+        }else if (n1==92 && n2>20){
+             alert("一共"+n2*5.9+"元");
+        }else if(n1==97 && n2<=30){
+            alert("一共"+n2*7+"元");
+        }else if (n1==97 && n2>30){
+            alert("一共"+n2*6.95+"元")
+        }else{
+            alert("你输入的汽油编号有误");
+        }
 
     </script>
     <title>Title</title>
